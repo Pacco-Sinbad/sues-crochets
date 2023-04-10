@@ -1,0 +1,220 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  width: 100%;
+  background-color: rgb(93, 165, 185);
+}
+
+a{
+  color: rgb(66, 26, 2);
+  text-decoration: none;
+}
+
+.headLine{
+  font-size: 10rem;
+  font-weight: 200;
+  text-align: center;
+  color: rgb(66, 26, 2);
+}
+@media screen and (max-width: 1507px) {
+  .headLine{
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .headLine{
+    font-size: 5rem;
+  }
+}
+
+.contentBox{
+  padding-left: 8%;
+  width: 100%;
+}
+
+
+/* ****************************************
+NAV
+******************************************* */
+nav{
+  position: fixed;
+  height: 100vh;
+  width: 8%;
+  background-color: rgb(93, 165, 185);
+  border-right: 3px solid rgb(0, 151, 113);
+  font-variant: small-caps;
+  font-size: 2rem;
+  z-index: 5;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+nav li{
+  text-align: center;
+  padding: 1rem .2rem;
+}
+li:first-child{
+  margin-top: -4rem;
+}
+
+a:hover{
+  color: rgb(207, 163, 105);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1670px) {
+  nav{
+    font-size: 1.8rem;
+  }
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+main{
+  background-image: url(https://lh3.googleusercontent.com/pw/AMWts8AiBhekczyrq6btoxNk_jFWi_ZQZDVA5geUg-GdTLa6gR4E_xXm-oAkiYSgGLqG5F593_uuTAQ_A42QovOL1ov5NRGVrOLFbFhDxhIjwtcZtaFZ53fPgBrMQH-9WdqCydWC3b0kp8e-Sos79fQvf1PZ5eTRhyKFrdMf7g1HdKDMbLjQW5b1gIKOn8qzLUCGzPyxCx0s41MK1LNJ14_NMIR_3ayFo1QNIVKgDPQ3IBH6_-v6VgXgy6Bb_xaQOU01nDQwut4P7JAF8kNQgbYwlVLvKIYo02nykBTpVL5jKjBpX7zGwFoss36pj6pf0TmIFpqmHBL87jJsqS_x4UqWmMOWCG43r1a1PiDgyapuXV81igCYYR2cY-NBCJTMMxNPNrPYGflQdr_jDeGURlvDCSE_hJB2GbUCCuemCwbKUnuLBYfBzB5UkmRecEFoHyZt3NSCIVgsGTL1RSS0uulHR9AHh0LEW2Uh4OUg520V3Sl61OI5AVscRpoTYqyZ46gbWQGKpmQ-2RurfiVJ4_zKIVN9U-VvprMcqWbno2ZTEZSSoHXYxRFBUHUkcB7gzyHSKNnjvKMBWDXBNfKblv_TgnpsBbQYhFVhqDjSWdP0iX33w1wVecQqn_8juFuH_Is_shAbkv-QukdZlOKCcen0jeq4FBKaZg3dKoyfdaG-iup1qZHgH-pIJiZ3rXO7hkk4psSvk6nRRbGIAV94r8L8gi6gqX9lbVgzLJcmehTt76Zp8PH5-4gKWPqXYneq0z7gLe0cjxwHTe3dmbvOxDxoK4rJp-0fEZ6opypnrxg81mxMVDCfvlmXTJs-_GN7ccRutJd7KhVqxAq3s_WLcfaHqHud5y5whzOjYEwxvDGt5PLQxXP62RMbEYcxVlKMeFfE3vl1ir2KmPs8zc5UgWi-uPcNiiimk5WIEbLvkYTdokPH8_NM09MoaZmxCLFdY3bSDDG1_MeeGKjj58um_YFtsuQ8ArXGVXZdDQ=w697-h929-s-no?authuser=0);
+  background-size: 70%;
+  height: 100vh;
+  
+}
+h1{
+  width: 75%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  background-color: rgba(102, 228, 157, 0.844);
+  border-radius: 45%;
+  line-height: 20rem;
+  height: 20rem;
+  position: relative;
+  top: 45px;
+  z-index: 5;
+}
+@media screen and (max-width: 1507px){
+  h1{
+    height: 15rem;
+    line-height: 15rem;
+    top: 70px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  h1{
+    height: 10rem;
+    line-height: 10rem;
+  }
+}
+
+
+/* *****************************************
+GALLERY
+******************************************** */
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: first baseline;
+  align-content: center;
+  width: 100%;
+  padding: 0 20rem 0 20rem;
+}
+
+.gallery img{
+  padding: .2rem;
+  border: 3px solid rgb(207, 163, 105);
+  border-radius: 5%;
+  width: 30%;
+}
+.secondRow{
+  position: relative;
+  top: -240px;
+}
+#iOne{
+  position: relative;
+  left: 40px;
+  top: 10px;
+}
+#iTwo{
+  position: relative;
+  z-index: 4;
+  top: 40px;
+}
+#iThree{
+  position: relative;
+  top: -20px;
+  left: -30px;
+}
+#iFour{
+  position: relative;
+  top: -40px;
+  left: 90px;
+  z-index: 4;
+}
+#iFive{
+  position: relative;
+  top: -90px;
+}
+#iSix{
+  position: relative;
+  top: -30px;
+  left: -90px;
+}
+@media screen and (max-width: 1507px){
+  .secondRow{
+    top: -90px;
+  }
+  .firstRow{
+    position: relative;
+    top: 37px;
+  }
+  .gallery{
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 1240px){
+  .gallery{
+    padding: 0rem;
+  }
+}
+
